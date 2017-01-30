@@ -1,7 +1,7 @@
 # MMM-Compliments
 
 The `MMM-Compliments` module is a fork of the [original default module](https://github.com/MichMich/MagicMirror/tree/master/modules/default/compliments) of the MagicMirror.
-It adds the option to disable randomization.
+It adds the option to disable randomization. If the option is set to false, it just cycles through the array given.
 
 ## Using the module
 
