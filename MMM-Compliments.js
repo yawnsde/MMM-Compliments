@@ -31,7 +31,7 @@ Module.register("MMM-Compliments",{
 		updateInterval: 30000,
 		remoteFile: null,
 		fadeSpeed: 4000,
-    randomizeEntries: true
+		randomizeEntries: true
 	},
 
 	// Set currentweather from module
@@ -176,8 +176,8 @@ Module.register("MMM-Compliments",{
 
 	// Override dom generator.
 	getDom: function() {
-  	var complimentText = ( randomizeEntries ? this.randomCompliment() : this.nextCompliment());
-
+		var complimentText = ( this.config.randomizeEntries ? this.randomCompliment() : this.nextCompliment());
+	
 		var compliment = document.createTextNode(complimentText);
 		var wrapper = document.createElement("div");
 		wrapper.className = this.config.classes ? this.config.classes : "thin xlarge bright";
